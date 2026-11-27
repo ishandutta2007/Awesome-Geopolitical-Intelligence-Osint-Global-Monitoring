@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Geopolitical-Intelligence-Osint-Global-Monitoring/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Geopolitical-Intelligence-Osint-Global-Monitoring?style=social&color=white" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Geopolitical-Intelligence-Osint-Global-Monitoring/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Geopolitical-Intelligence-Osint-Global-Monitoring?style=social&color=white" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Geopolitical-Intelligence-Osint-Global-Monitoring/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Geopolitical-Intelligence-Osint-Global-Monitoring?style=social&color=white" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -63,7 +63,7 @@ The global Threat Intelligence, Geopolitical Risk & OSINT Analytics Software mar
 
 *Sorted descending by GitHub stargazer count. All open-source repositories listed below are self-hostable with no licensing subscription fees.*
 
-| 📦 Repository & Stars | 📜 License | 🎛️ Self-Hosted Freedom & Limits | 📌 Primary OSINT / Intelligence Domain & Features |
+| 📦 Repository & GitHub_Stars | 📜 License | 🎛️ Self-Hosted Freedom & Limits | 📌 Primary OSINT / Intelligence Domain & Features |
 | :--- | :--- | :--- | :--- |
 | **[sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)**<br><a href="https://github.com/sherlock-project/sherlock/stargazers"><img src="https://img.shields.io/github/stars/sherlock-project/sherlock?style=social&color=white" alt="Sherlock Stars" /></a> | **MIT** | 100% Free Forever | 🔎 **Automated Username Reconnaissance**: Hunt down social media and forum accounts across 400+ international platforms with concurrent multi-threading. |
 | **[koala73/worldmonitor](https://github.com/koala73/worldmonitor)**<br><a href="https://github.com/koala73/worldmonitor/stargazers"><img src="https://img.shields.io/github/stars/koala73/worldmonitor?style=social&color=white" alt="WorldMonitor Stars" /></a> | **GPL-3.0** | 100% Free Forever | 🗺️ **Real-Time Global Situational Awareness**: Interactive world intelligence map aggregating multi-source geopolitical crises, conflict telemetry, natural disasters, and flights. |
