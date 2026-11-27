@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#070c1a" />
+    </linearGradient>
+
+    <linearGradient id="primaryTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="pulseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- CSS Animation Styles -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(1.5deg); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 0.2; r: 3; }
+        50% { opacity: 1; r: 6; }
+      }
+      @keyframes streamFlow {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes globeSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .radar-line {
+        transform-origin: 1060px 140px;
+        animation: radarSweep 10s linear infinite;
+      }
+      .flow-path {
+        stroke-dasharray: 12, 12;
+        animation: streamFlow 25s linear infinite;
+      }
+      .beacon-1 { animation: pulseDot 2.8s ease-in-out infinite; }
+      .beacon-2 { animation: pulseDot 3.5s ease-in-out infinite 0.7s; }
+      .beacon-3 { animation: pulseDot 2.2s ease-in-out infinite 1.4s; }
+      .beacon-4 { animation: pulseDot 4.1s ease-in-out infinite 2.1s; }
+      .floating-pill { animation: floatSlow 7s ease-in-out infinite; }
+      .floating-pill-rev { animation: floatSlow 8s ease-in-out infinite reverse; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Background Cyber Tech Grid Pattern -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="120" y1="0" x2="120" y2="420" />
+    <line x1="240" y1="0" x2="240" y2="420" />
+    <line x1="360" y1="0" x2="360" y2="420" />
+    <line x1="480" y1="0" x2="480" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="720" y1="0" x2="720" y2="420" />
+    <line x1="840" y1="0" x2="840" y2="420" />
+    <line x1="960" y1="0" x2="960" y2="420" />
+    <line x1="1080" y1="0" x2="1080" y2="420" />
+  </g>
+
+  <!-- Ambient Background Glowing Spheres (Placed behind all text) -->
+  <circle cx="1060" cy="140" r="160" fill="#38bdf8" opacity="0.08" filter="url(#pulseGlow)" />
+  <circle cx="150" cy="320" r="140" fill="#818cf8" opacity="0.06" filter="url(#pulseGlow)" />
+  <circle cx="600" cy="210" r="220" fill="#c084fc" opacity="0.04" filter="url(#pulseGlow)" />
+
+  <!-- Dynamic Background Geopolitical Monitoring Radar Widget (Right Side - Behind text layer) -->
+  <g opacity="0.35">
+    <circle cx="1060" cy="140" r="110" fill="none" stroke="#0ea5e9" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="1060" cy="140" r="75" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,4" />
+    <circle cx="1060" cy="140" r="40" fill="none" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    <line x1="940" y1="140" x2="1180" y2="140" stroke="#0ea5e9" stroke-width="0.8" stroke-opacity="0.3" />
+    <line x1="1060" y1="20" x2="1060" y2="260" stroke="#0ea5e9" stroke-width="0.8" stroke-opacity="0.3" />
+    <!-- Rotating Radar Line -->
+    <line class="radar-line" x1="1060" y1="140" x2="1165" y2="140" stroke="#38bdf8" stroke-width="2.5" opacity="0.8" filter="url(#glow)" />
+  </g>
+
+  <!-- Dynamic Geopolitical Data Stream Telemetry Lines (Background) -->
+  <path class="flow-path" d="M -50 360 C 200 390, 450 310, 700 350 S 1050 380, 1250 330" fill="none" stroke="#06b6d4" stroke-width="1.8" opacity="0.25" />
+  <path class="flow-path" d="M -50 380 C 250 340, 500 400, 750 330 S 1100 370, 1250 360" fill="none" stroke="#6366f1" stroke-width="1.4" opacity="0.2" />
+
+  <!-- Dynamic Intel Event Beacons (Pulsing node indicators) -->
+  <circle class="beacon-1" cx="995" cy="115" r="4" fill="#38bdf8" filter="url(#glow)" />
+  <circle class="beacon-2" cx="1120" cy="165" r="5" fill="#f43f5e" filter="url(#glow)" />
+  <circle class="beacon-3" cx="1075" cy="85" r="3" fill="#10b981" filter="url(#glow)" />
+  <circle class="beacon-4" cx="1025" cy="195" r="4.5" fill="#fbbf24" filter="url(#glow)" />
+
+  <!-- Animated Feature Badges / Metadata Floating Badges (Upper Row) -->
+  <g class="floating-pill" opacity="0.95">
+    <!-- Status Pill -->
+    <rect x="70" y="45" width="230" height="34" rx="17" fill="url(#pillGrad1)" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.2" />
+    <circle cx="88" cy="62" r="5" fill="#10b981" />
+    <circle cx="88" cy="62" r="8" fill="#10b981" opacity="0.3" class="beacon-3" />
+    <text x="104" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">REAL-TIME GLOBAL INTEL</text>
+  </g>
+
+  <g class="floating-pill-rev" opacity="0.95">
+    <rect x="315" y="45" width="160" height="34" rx="17" fill="url(#pillGrad1)" stroke="#818cf8" stroke-opacity="0.5" stroke-width="1.2" />
+    <text x="332" y="68" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">⚡ OSINT &amp; RECON</text>
+  </g>
+
+  <g class="floating-pill" opacity="0.95">
+    <rect x="490" y="45" width="200" height="34" rx="17" fill="url(#pillGrad1)" stroke="#c084fc" stroke-opacity="0.5" stroke-width="1.2" />
+    <text x="507" y="68" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">🌐 CRISIS TELEMETRY</text>
+  </g>
+
+  <!-- FOREGROUND: Header & Title & Subtitle (Always in front, crystal crisp, high contrast) -->
+  <g id="foreground-content">
+    <!-- Main Title -->
+    <text x="70" y="165" fill="url(#primaryTextGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5" filter="url(#glow)">
+      Awesome Geopolitical Intelligence
+    </text>
+    <text x="70" y="215" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.2">
+      &amp; OSINT Global Monitoring
+    </text>
+
+    <!-- Subtitle Description -->
+    <text x="70" y="265" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400">
+      Curated index of enterprise SaaS platforms, open-source reconnaissance tools,
+    </text>
+    <text x="70" y="292" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400">
+      crisis mapping dashboards, threat intelligence platforms (TIP), and geospatial tracking engines.
+    </text>
+
+    <!-- Bottom Feature Pills / Capability Tags -->
+    <g transform="translate(70, 332)">
+      <!-- Tag 1 -->
+      <rect x="0" y="0" width="135" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="14" y="20" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🛰️ Situational Map</text>
+
+      <!-- Tag 2 -->
+      <rect x="147" y="0" width="135" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="161" y="20" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🛡️ Threat Intel TIP</text>
+
+      <!-- Tag 3 -->
+      <rect x="294" y="0" width="140" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="308" y="20" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🔍 Social &amp; Dark Web</text>
+
+      <!-- Tag 4 -->
+      <rect x="446" y="0" width="130" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="460" y="20" fill="#ec4899" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">📊 Entity Graphs</text>
+
+      <!-- Tag 5 -->
+      <rect x="588" y="0" width="145" height="30" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="602" y="20" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🚢 Maritime / Aero</text>
+    </g>
+  </g>
+</svg>
